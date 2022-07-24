@@ -1,5 +1,6 @@
 import { connect } from "react-redux"
 import NumberComponent from "./NumberComponent"
+import {add} from '../../store/actions'
 
 function mapStateToProps(state){
     return{
@@ -9,10 +10,7 @@ function mapStateToProps(state){
 
 function mapDispatchToProps(dispatch){
     return {
-      add : (no) => dispatch({
-        type: "ADD",
-        payload: no
-      })
+      add : (no) => dispatch(add(no))
     }
   }  
 

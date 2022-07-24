@@ -1,6 +1,6 @@
 import { connect } from "react-redux"
-import { setName } from "./App";
 import PersonalDetailsComponent from "./PersonalDetailsComponent"
+import { setName } from "../../store/actions"
 
 function mapStateToProps(state){
     return {
